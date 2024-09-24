@@ -30,7 +30,6 @@ class MultiThreadedServer
             // 6. Для каждого клиента запускаем новый поток для его обслуживания
             Thread clientThread = new Thread(() => HandleClient(clientSocket));
             clientThread.Start();
-            Console.WriteLine("Loop is over!!!!!!!!!!!!!!!!!!!!!!!");
         }
     }
 
