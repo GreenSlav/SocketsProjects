@@ -1,0 +1,50 @@
+.container {
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: calc(90%);
+    background-color: #ffffff;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.button {
+    transition: background-color 0.4s ease, color 0.4s ease;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;             /* Убираем рамку */
+    outline: none;            /* Убираем обводку при фокусе */
+    background: none;         /* Убираем фон */
+    box-shadow: none;         /* Убираем тени */
+    cursor: pointer;          /* Устанавливаем указатель на курсор */
+}
+
+.button:focus {
+    outline: none;            /* Убираем обводку при фокусе */
+}
+
+
+
+.button:active {
+    border: none;             /* Убираем рамку при нажатии */
+    box-shadow: none;         /* Убираем тени при нажатии */
+    outline: none;            /* Убираем обводку при фокусе */
+    transform: none;          /* Убираем эффект сжатия, если он есть */
+}
+
+.container:hover {
+    background-color: black;
+}
+
+
+.button:hover{
+    background-color: transparent;
+    color: white;
+}
+
+.container:active {
+    background-color: #a6a6a6;
+}

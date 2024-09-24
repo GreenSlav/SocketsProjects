@@ -1,0 +1,36 @@
+.container {
+    border-top: 10px solid #1c1b1b;
+    width: 100%;
+    height: calc(20% - 25px);
+    position: absolute;
+    top: calc(70% + 15px);
+    background-color: #1c1b1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.input {
+    letter-spacing: 1px;
+    border: none;             /* Убираем рамку */
+    outline: none;            /* Убираем обводку при фокусе */
+    background: none;         /* Убираем фон */
+    color: inherit;           /* Устанавливаем цвет текста как у родительского элемента */
+    font: inherit;            /* Устанавливаем шрифт как у родительского элемента */
+    box-shadow: none;         /* Убираем тени */
+    appearance: none;
+    height: 94%;
+    width: 96%;
+    font-size: 1.2em;
+    resize: none;
+    overflow: auto;           /* Включаем прокрутку, если текст выходит за границы */
+
+
+}
+
+/* Скрытие полосы прокрутки для всех браузеров */
+.input::-webkit-scrollbar {
+    display: none; /* Для Chrome, Safari и других браузеров на движке WebKit */
+}
+
